@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-       <add id="Mitrahsoft_Helloworld::first_level_demo" title="Mitrahsoft Admin Menu" module="Mitrahsoft_Helloworld" sortOrder="20" resource="Magento_Backend::content" />
-       <add id="Mitrahsoft_Helloworld::second_level_demo"  title="Sub Menu" module="Mitrahsoft_Helloworld" sortOrder="1" action="menuitem/index/index" parent="Mitrahsoft_Helloworld::first_level_demo" resource="Magento_Backend::content" />
-  </menu>
-</config>
