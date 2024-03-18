@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <!-- for add new tab in Magento2 system configuration section -->
+        <tab id="Mitrahsoft" translate="label" sortOrder="10">
+             <label>Mitrahsoft</label>
+        </tab>
+        <!-- for create section -->
+        <section id="testing" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label> Custom Text Box</label>
+            <!-- Assign section to tab -->
+            <tab>Mitrahsoft</tab>
+            <resource>Mitrahsoft_Testing::configuration</resource>
+            <!-- create group for fields in section -->
+            <group id="parameters" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Parameters</label>
+                <!-- create text type field -->
+                <field id="custom_text" translate="label comment" sortOrder="7" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom Text</label>
+                    <comment>e.g hello mitrahsoft .</comment>
+                    <validate>validate-number required-entry</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+ 
