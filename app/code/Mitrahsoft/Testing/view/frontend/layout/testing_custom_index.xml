@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <head>
+      <title>Custom Module</title>
+   </head>
+   <referenceContainer name="content">
+      <block class="Mitrahsoft\Testing\Block\Index" name="custommodule_test" template="Mitrahsoft_Testing::test.phtml" />
+   </referenceContainer></page>
