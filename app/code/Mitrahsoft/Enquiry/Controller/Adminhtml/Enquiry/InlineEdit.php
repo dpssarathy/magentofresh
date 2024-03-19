@@ -15,7 +15,7 @@ class InlineEdit extends \Magento\Backend\App\Action
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\Controller\Result\JsonFactory $jsonFactory,
-        \Mitrahsoft\Enquiry\Model\ContactFactory $contactFactory,
+        \Mitrahsoft\Enquiry\Model\EnquiryFactory $contactFactory,
         \Psr\Log\LoggerInterface $logger
        
         
