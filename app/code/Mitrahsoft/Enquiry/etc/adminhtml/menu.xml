@@ -6,19 +6,19 @@
            sortOrder="10"
            resource="Mitrahsoft_Enquiry::menu"
         />
-      
-       <!-- <add id="Mitrahsoft_Enquiry::submenu_contact"
-           title="Contact Us" translate="title" module="Mitrahsoft_Enquiry"
-           sortOrder="1000" parent="Mitrahsoft_Enquiry::menu"
-           action="contact/contact/index"
-           resource="Mitrahsoft_Enquiry::submenu_contact"
-        /> -->
          
        <add id="Mitrahsoft_Enquiry::submenu_enquiry"
            title="Enquiry Item" translate="title" module="Mitrahsoft_Enquiry"
            sortOrder="1000" parent="Mitrahsoft_Enquiry::menu"
            action="enquiry/enquiry/index"
            resource="Mitrahsoft_Enquiry::submenu_enquiry"
+        />
+
+      <add id="Mitrahsoft_Enquiry::submenu_post"
+           title="Post List" translate="title" module="Mitrahsoft_Enquiry"
+           sortOrder="1000" parent="Mitrahsoft_Enquiry::menu"
+           action="enquiry/post/index"
+           resource="Mitrahsoft_Enquiry::submenu_post"
         />
         
        

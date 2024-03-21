@@ -4,5 +4,8 @@
         <route id="enquiry" frontName="enquiry">
             <module name="Mitrahsoft_Enquiry" />
         </route>
+        <route id="post" frontName="post">
+            <module name="Mitrahsoft_Enquiry" />
+        </route>
     </router>
 </config>

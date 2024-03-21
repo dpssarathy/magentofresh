@@ -14,4 +14,20 @@
             </argument>
         </arguments>
     </type>
+
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="enquiry_post_listing_data_source" xsi:type="string">Mitrahsoft\Enquiry\Model\ResourceModel\Post\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Mitrahsoft\Enquiry\Model\ResourceModel\Post\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mitrahsoft_post</argument>
+            <argument name="resourceModel" xsi:type="string">Mitrahsoft\Enquiry\Model\ResourceModel\Post</argument>
+        </arguments>
+    </virtualType>
+
 </config>
