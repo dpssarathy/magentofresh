@@ -14,4 +14,22 @@
             <column name="id" />
         </constraint>
     </table>
+
+
+    <table name="mitrahsoft_post" resource="default" engine="innodb" comment="mitrahsoft_post">
+        <column xsi:type="int" name="post_id" padding="6" unsigned="false" nullable="false" identity="true" comment="POSTID" />
+        <column xsi:type="varchar" name="name" nullable="false" length="50" comment="Name" />
+        <column xsi:type="varchar" name="url_key" nullable="false" length="256" comment="URLKEY" />
+        <column xsi:type="text" name="post_content" nullable="false"  comment="PostContent" />
+        <column xsi:type="varchar" name="tags" nullable="false" length="50" comment="TAGS" />
+        <column xsi:type="int" name="status" nullable="false" comment="Status" default="1" />
+        <column xsi:type="text" name="featured_image" nullable="false"  comment="FeaturedImage" />
+
+        <column name="created_at" nullable="false" xsi:type="datetime" default="CURRENT_TIMESTAMP" on_update="false"/>
+        <column name="updated_at" nullable="false" xsi:type="datetime" default="CURRENT_TIMESTAMP" on_update="false"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="post_id" />
+        </constraint>
+    </table>
 </schema>
